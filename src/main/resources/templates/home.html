@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello and Goodbye</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form method="post" th:action="@{/hello}">
+    <div>
+        <input type="text" name="name" id="helloName" />
+        <input type="submit" value="Hello"/>
+    </div>
+</form>
+<form method="post" th:action="@{/goodbye}">
+    <div>
+        <input type="text" name="name" id="goodbyeName"/>
+        <input type="submit" value="Goodbye"/>
+    </div>
+</form>
+</body>
+</html>
